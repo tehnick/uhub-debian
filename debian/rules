@@ -9,8 +9,8 @@ ifeq (,$(NUMJOBS))
 endif
 
 makeopts := DESTDIR=$(CURDIR)/debian/uhub/ \
-	UHUB_PREFIX=$(CURDIR)/debian/uhub/usr \
-	RELEASE=YES SILENT=YES
+            UHUB_PREFIX=$(CURDIR)/debian/uhub/usr \
+            RELEASE=YES
 
 build: build-arch build-indep
 
