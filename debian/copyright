@@ -4,7 +4,7 @@ Tue, 26 Jan 2010 18:59:02 +0100
 This package was rewritten by Boris Pek <tehnick-8@mail.ru>
 Tue, 27 Sep 2011 02:02:40 +0300
 
-The orig.tar.bz2 is generated from upstream source tree:
+The orig.tar.bz2 is generated from upstream gzipped tarball:
  https://github.com/janvidar/uhub/downloads
 
 Following directory was ignored due to known reason:
