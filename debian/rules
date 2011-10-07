@@ -36,6 +36,7 @@ install: build
 	dh_prep
 	dh_installdirs
 	$(MAKE) install $(makeopts)
+	chmod 0750 $(CURDIR)/debian/uhub/var/log/uhub
 
 binary-indep: build install
 
