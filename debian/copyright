@@ -2,12 +2,12 @@ Format: http://dep.debian.net/deps/dep5/
 Debianized-By: Boris Pek <tehnick-8@mail.ru>
 Debianized-Date: Tue, 27 Sep 2011 02:02:40 +0300
 Upstream-Author: Jan Vidar Krey <janvidar@extatic.org>
-Original-Source: https://github.com/janvidar/uhub/tags
+Original-Source: https://github.com/janvidar/uhub/downloads
  The orig.tar.bz2 is generated from upstream gzipped tarball, except it uses
- bzip compression and debian/ directory is not included.
+ bzip compression. See section get-orig-source in debian/rules file for details.
  .
- You can browse ignored directory here:
- https://github.com/janvidar/uhub/tree/master/debian/
+ There is no constant tarball in GitHub: it is generated each time when it is
+ asked. So we do not need to keep original tarball in Debian.
 
 Files: *
  debian/uhub.init

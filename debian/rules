@@ -52,8 +52,6 @@ get-orig-source:
 	rm -rf $(DEVELOPER)-$(PROJECT)-*
 	tar xzf "$(CUR_VER)"
 	mv $(DEVELOPER)-$(PROJECT)-* "$(PACKAGE)-$(CUR_VER)"
-	# processing
-	rm -rf "$(PACKAGE)-$(CUR_VER)/debian"
 	# tarball
 	tar -cjf "$(PACKAGE)_$(CUR_VER).orig.tar.bz2" "$(PACKAGE)-$(CUR_VER)"
 	# cleaning
