@@ -1,3 +1,9 @@
+uhub (0.3.2-1ppa4~precise1) precise; urgency=low
+
+  * Some temporary fixes in package.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 05 Dec 2011 23:11:58 +0200
+
 uhub (0.3.2-1ppa3~precise1) precise; urgency=low
 
   * Package on Launchpad was sync with package in Debian.
