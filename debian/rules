@@ -46,7 +46,7 @@ install: build
 
 get-orig-source:
 	# preparation
-	rm -rf  "$(CUR_VER)"/ "$(PACKAGE)-$(CUR_VER)"/
+	rm -rf "$(PACKAGE)-$(CUR_VER)" "$(CUR_VER)"
 	# sources
 	wget -4 "http://nodeload.github.com/$(DEVELOPER)/$(PROJECT)/tarball/$(CUR_VER)"
 	rm -rf $(DEVELOPER)-$(PROJECT)-*
