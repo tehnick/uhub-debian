@@ -2,11 +2,13 @@ Source: uhub
 Section: net
 Priority: optional
 Maintainer: Boris Pek <tehnick-8@mail.ru>
-Build-Depends: debhelper (>= 7)
+Build-Depends: debhelper (>= 7.0.50~), fakeroot,
+ libsqlite3-dev
 Homepage: http://www.uhub.org/
 Vcs-Git: git://github.com/tehnick/uhub-debian.git
 Vcs-Browser: https://github.com/tehnick/uhub-debian
 Standards-Version: 3.9.3
+DM-Upload-Allowed: yes
 
 Package: uhub
 Architecture: any
@@ -22,6 +24,6 @@ Description: High performance Advanced Direct Connect p2p hub
  Key features:
   - High performance and low memory usage
   - IPv4 and IPv6 support
-  - Experimental SSL support (optional)
+  - Experimental SSL support (currently disabled)
   - Advanced access control support
   - Easy configuration
