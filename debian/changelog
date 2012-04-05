@@ -1,3 +1,28 @@
+uhub (0.4.0~git20120405-390b63e-1) experimental; urgency=low
+
+  * Update to GIT snapshot.
+  * Bumped Standards-Version to 3.9.3.
+  * Changed tarball compression format: LZMA2 is used now.
+  * debian/rules was updated:
+    - now dh is used instead of direct dh_* commands
+    - now uscan is used for checking current upstream version
+      (dpkg-parsechangelog was used earlier)
+  * debian/doc/uhub.1, debian/doc/uhub.conf and debian/doc/users.conf were
+    removed: now they are available in upstream.
+  * debian/doc/uhub-passwd.1 was created: there is no such manpage in
+    upstream yet.
+  * debian/uhub.manpages was updated (see above).
+  * debian/control was updated:
+    - added string `DM-Upload-Allowed: yes'
+    - added dependence from packages fakeroot and libsqlite3-dev
+  * debian/copyright was updated:
+    - URL in Format field was updated
+    - years were updated
+  * Upstream possibly fixed build for hurd-i386,
+    kfreebsd-i386, kfreebsd-amd64, s390 and s390x.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Fri, 06 Apr 2012 02:26:29 +0300
+
 uhub (0.3.2-1) unstable; urgency=low
 
   * Initial release (closes: #643290).
