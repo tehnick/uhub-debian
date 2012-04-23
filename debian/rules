@@ -19,10 +19,7 @@ CUR_VER = $(shell uscan --dehs | sed -n 's/.*<upstream-version>\(.*\)<\/upstream
 MAKEOPTS := DESTDIR=$(DEB_DH_INSTALL_SOURCEDIR) \
             UHUB_PREFIX=$(DEB_DH_INSTALL_SOURCEDIR)/usr \
             RELEASE=YES \
-            USE_SSL=NO
-
-# SSL support is currently disabled because OpenSSL exception does not granted
-# officialy yet. See: http://bugs.extatic.org/view.php?id=183
+            USE_SSL=YES
 
 %:
 	dh $@ --parallel
