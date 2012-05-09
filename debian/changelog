@@ -10,7 +10,7 @@ uhub (0.4.0~git20120423-9efe4bc-1) experimental; urgency=low
     - USE_SSL configuration option is enabled
   * debian/doc/uhub.1, debian/doc/uhub.conf and debian/doc/users.conf
     were removed: now they are available in upstream.
-  * debian/doc/uhub-passwd.1 was created: there is no such manpage in
+  * debian/doc/uhub-passwd.1 was created: there is no such man page in
     upstream yet.
   * debian/uhub.manpages was updated (see above).
   * debian/control was updated: added dependence from packages
@@ -18,7 +18,7 @@ uhub (0.4.0~git20120423-9efe4bc-1) experimental; urgency=low
   * debian/copyright was updated:
     - URL in Format field was updated
     - years were updated
-    - OpenSSL exception was officialy received
+    - OpenSSL exception was officially received
       (see file COPYING.OpenSSL in sources)
   * Upstream possibly fixed build for hurd-i386,
     kfreebsd-i386, kfreebsd-amd64, s390 and s390x.
