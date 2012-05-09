@@ -8,14 +8,13 @@ uhub (0.4.0~git20120423-9efe4bc-1) experimental; urgency=low
     - now uscan is used for checking current upstream version
       (dpkg-parsechangelog was used earlier)
     - USE_SSL configuration option is enabled
-  * debian/doc/uhub.1, debian/doc/uhub.conf and debian/doc/users.conf were
-    removed: now they are available in upstream.
+  * debian/doc/uhub.1, debian/doc/uhub.conf and debian/doc/users.conf
+    were removed: now they are available in upstream.
   * debian/doc/uhub-passwd.1 was created: there is no such manpage in
     upstream yet.
   * debian/uhub.manpages was updated (see above).
-  * debian/control was updated:
-    - added string `DM-Upload-Allowed: yes'
-    - added dependence from packages fakeroot, libsqlite3-dev and libssl-dev
+  * debian/control was updated: added dependence from packages
+    fakeroot, libsqlite3-dev and libssl-dev
   * debian/copyright was updated:
     - URL in Format field was updated
     - years were updated
