@@ -1,3 +1,10 @@
+uhub (0.4.0~git20120423-9efe4bc-0ppa2~quantal1) quantal; urgency=low
+
+  * debian/rules was updated:
+    - used hardening flags in compiler options
+
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 23 May 2012 20:25:20 +0300
+
 uhub (0.4.0~git20120423-9efe4bc-0ppa1~precise1) precise; urgency=low
 
   * Update to GIT snapshot.
@@ -8,21 +15,21 @@ uhub (0.4.0~git20120423-9efe4bc-0ppa1~precise1) precise; urgency=low
     - now uscan is used for checking current upstream version
       (dpkg-parsechangelog was used earlier)
     - USE_SSL configuration option is enabled
-  * debian/doc/uhub.1, debian/doc/uhub.conf and debian/doc/users.conf were
-    removed: now they are available in upstream.
-  * debian/doc/uhub-passwd.1 was created: there is no such manpage in
+  * debian/doc/uhub.1, debian/doc/uhub.conf and debian/doc/users.conf
+    were removed: now they are available in upstream.
+  * debian/doc/uhub-passwd.1 was created: there is no such man page in
     upstream yet.
   * debian/uhub.manpages was updated (see above).
-  * debian/control was updated:
-    - added string `DM-Upload-Allowed: yes'
-    - added dependence from packages fakeroot, libsqlite3-dev and libssl-dev
+  * debian/control was updated: added dependence from packages
+    fakeroot, libsqlite3-dev and libssl-dev
   * debian/copyright was updated:
     - URL in Format field was updated
     - years were updated
-    - OpenSSL exception was officialy received
+    - OpenSSL exception was officially received
       (see file COPYING.OpenSSL in sources)
   * Upstream possibly fixed build for hurd-i386,
     kfreebsd-i386, kfreebsd-amd64, s390 and s390x.
+
  -- Boris Pek <tehnick-8@mail.ru>  Mon, 23 Apr 2012 23:41:21 +0300
 
 uhub (0.3.2-1) unstable; urgency=low
