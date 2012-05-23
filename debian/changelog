@@ -8,6 +8,7 @@ uhub (0.4.0~git20120423-9efe4bc-1) experimental; urgency=low
     - now uscan is used for checking current upstream version
       (dpkg-parsechangelog was used earlier)
     - USE_SSL configuration option is enabled
+    - used hardening flags in compiler options
   * debian/doc/uhub.1, debian/doc/uhub.conf and debian/doc/users.conf
     were removed: now they are available in upstream.
   * debian/doc/uhub-passwd.1 was created: there is no such man page in
