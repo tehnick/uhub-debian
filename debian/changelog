@@ -1,3 +1,11 @@
+uhub (0.4.0-0ppa1~quantal1) quantal; urgency=low
+
+  * Update to stable release 0.4.0.
+  * debian/doc/uhub-passwd.1 was deleted: now available in upstream.
+  * debian/uhub.manpages was updated (see above).
+
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 30 May 2012 20:07:30 +0300
+
 uhub (0.4.0~git20120423-9efe4bc-0ppa2~quantal1) quantal; urgency=low
 
   * debian/rules was updated:
