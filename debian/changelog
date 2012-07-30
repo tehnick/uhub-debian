@@ -1,4 +1,4 @@
-uhub (0.4.0-1) unstable; urgency=low
+uhub (0.4.0-1) experimental; urgency=low
 
   * Update to stable release 0.4.0.
   * debian/doc/uhub-passwd.1 was deleted: now available in upstream.
