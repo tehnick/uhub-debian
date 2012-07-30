@@ -1,6 +1,8 @@
 uhub (0.4.0-1) experimental; urgency=low
 
   * Update to stable release 0.4.0.
+  * debian/control was updated:
+    added string `DM-Upload-Allowed: yes'.
   * debian/doc/uhub-passwd.1 was deleted: now available in upstream.
   * debian/uhub.manpages was updated (see above).
 
