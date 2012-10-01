@@ -1,3 +1,12 @@
+uhub (0.4.0-0ppa2~quantal1) quantal; urgency=low
+
+  * Update debian/rules:
+    - simplify rules
+    - enable verbose output during build
+    - fix get-orig-source section in according with Debian Policy §4.9
+
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 02 Oct 2012 00:36:09 +0300
+
 uhub (0.4.0-0ppa1~quantal1) quantal; urgency=low
 
   * Update to stable release 0.4.0.
