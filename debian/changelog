@@ -1,8 +1,12 @@
 uhub (0.4.0-1) experimental; urgency=low
 
   * Update to stable release 0.4.0.
-  * debian/doc/uhub-passwd.1 was deleted: now available in upstream.
-  * debian/uhub.manpages was updated (see above).
+  * Delete debian/doc/uhub-passwd.1: now available in upstream.
+  * Update debian/uhub.manpages: see above.
+  * Update debian/rules:
+    - simplify rules
+    - enable verbose output during build
+    - fix get-orig-source section in according with Debian Policy §4.9
 
  -- Boris Pek <tehnick-8@mail.ru>  Wed, 30 May 2012 23:42:48 +0300
 
