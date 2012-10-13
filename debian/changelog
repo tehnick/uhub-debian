@@ -1,3 +1,15 @@
+uhub (0.4.0+git20121013-55-g7fae42a-1) experimental; urgency=low
+
+  * Update to Git snapshot.
+  * Update debian/control:
+    add build dependency from cmake.
+  * Update debian/rules:
+    upstream uses CMake now instead of manually written Makefile.
+  * Update debian/uhub.lintian-overrides:
+    false positives for lintian tag hardening-no-fortify-functions.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 13 Oct 2012 23:14:27 +0300
+
 uhub (0.4.0-1) experimental; urgency=low
 
   * Update to stable release 0.4.0.
