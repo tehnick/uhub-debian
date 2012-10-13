@@ -1,3 +1,10 @@
+uhub (0.4.0+git20121013-55-g7fae42a-2) experimental; urgency=low
+
+  * Add debian/patches/fix-build-on-kfreebsd:
+    fix build in Debian GNU/kFreeBSD.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 14 Oct 2012 02:20:16 +0300
+
 uhub (0.4.0+git20121013-55-g7fae42a-1) experimental; urgency=low
 
   * Update to Git snapshot.
