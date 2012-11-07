@@ -1,28 +1,46 @@
-uhub (0.4.0-0ppa2~quantal1) quantal; urgency=low
+uhub (0.4.1-0ppa1~raring1) raring; urgency=low
 
+  * Update to stable release 0.4.1.
+  * Delete debian/patches/*: accepted in upstream.
+  * Update debian/rules and debian/watch: fix after recent changes in GitHub.
+  * Package in Launchpad was sync with package in Debian.
+  * Changelog was cleaned.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 07 Nov 2012 23:11:59 +0200
+
+uhub (0.4.0+git20121013-55-g7fae42a-2) experimental; urgency=low
+
+  * Add debian/patches/fix-build-on-kfreebsd:
+    fix build in Debian GNU/kFreeBSD.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 14 Oct 2012 02:20:16 +0300
+
+uhub (0.4.0+git20121013-55-g7fae42a-1) experimental; urgency=low
+
+  * Update to Git snapshot.
+  * Update debian/control:
+    add build dependency from cmake.
+  * Update debian/rules:
+    upstream uses CMake now instead of manually written Makefile.
+  * Update debian/uhub.lintian-overrides:
+    false positives for lintian tag hardening-no-fortify-functions.
+  * Bump debhelper version to 8 (was 7.0.50~); update debian/compat.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sat, 13 Oct 2012 23:14:27 +0300
+
+uhub (0.4.0-1) experimental; urgency=low
+
+  * Update to stable release 0.4.0.
+  * Delete debian/doc/uhub-passwd.1: now available in upstream.
+  * Update debian/uhub.manpages: see above.
   * Update debian/rules:
     - simplify rules
     - enable verbose output during build
     - fix get-orig-source section in according with Debian Policy §4.9
 
- -- Boris Pek <tehnick-8@mail.ru>  Tue, 02 Oct 2012 00:36:09 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 30 May 2012 23:42:48 +0300
 
-uhub (0.4.0-0ppa1~quantal1) quantal; urgency=low
-
-  * Update to stable release 0.4.0.
-  * debian/doc/uhub-passwd.1 was deleted: now available in upstream.
-  * debian/uhub.manpages was updated (see above).
-
- -- Boris Pek <tehnick-8@mail.ru>  Wed, 30 May 2012 20:07:30 +0300
-
-uhub (0.4.0~git20120423-9efe4bc-0ppa2~quantal1) quantal; urgency=low
-
-  * debian/rules was updated:
-    - used hardening flags in compiler options
-
- -- Boris Pek <tehnick-8@mail.ru>  Wed, 23 May 2012 20:25:20 +0300
-
-uhub (0.4.0~git20120423-9efe4bc-0ppa1~precise1) precise; urgency=low
+uhub (0.4.0~git20120423-9efe4bc-1) experimental; urgency=low
 
   * Update to GIT snapshot.
   * Bumped Standards-Version to 3.9.3.
@@ -32,6 +50,7 @@ uhub (0.4.0~git20120423-9efe4bc-0ppa1~precise1) precise; urgency=low
     - now uscan is used for checking current upstream version
       (dpkg-parsechangelog was used earlier)
     - USE_SSL configuration option is enabled
+    - used hardening flags in compiler options
   * debian/doc/uhub.1, debian/doc/uhub.conf and debian/doc/users.conf
     were removed: now they are available in upstream.
   * debian/doc/uhub-passwd.1 was created: there is no such man page in
@@ -47,7 +66,7 @@ uhub (0.4.0~git20120423-9efe4bc-0ppa1~precise1) precise; urgency=low
   * Upstream possibly fixed build for hurd-i386,
     kfreebsd-i386, kfreebsd-amd64, s390 and s390x.
 
- -- Boris Pek <tehnick-8@mail.ru>  Mon, 23 Apr 2012 23:41:21 +0300
+ -- Boris Pek <tehnick-8@mail.ru>  Mon, 23 Apr 2012 23:53:57 +0300
 
 uhub (0.3.2-1) unstable; urgency=low
 
