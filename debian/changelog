@@ -1,3 +1,11 @@
+uhub (0.4.1-1) experimental; urgency=low
+
+  * Update to stable release 0.4.1.
+  * Delete debian/patches/*: accepted in upstream.
+  * Update debian/rules and debian/watch: fix after recent changes in GitHub.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 07 Nov 2012 23:42:52 +0200
+
 uhub (0.4.0+git20121013-55-g7fae42a-2) experimental; urgency=low
 
   * Add debian/patches/fix-build-on-kfreebsd:
