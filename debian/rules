@@ -22,6 +22,7 @@ override_dh_auto_install:
 	dh_auto_install
 	chmod 0750 $(CURDIR)/debian/$(PACKAGE)/var/log/uhub
 
+# Do nothing:
 .PHONY: override_dh_fixperms
 
 get-orig-source:
