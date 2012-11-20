@@ -1,3 +1,10 @@
+uhub (0.4.1-2) experimental; urgency=low
+
+  * Add file debian/patches/fix-build-on-hurd-i386:
+    fix build in Debian GNU/Hurd.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 20 Nov 2012 22:44:22 +0200
+
 uhub (0.4.1-1) experimental; urgency=low
 
   * Update to stable release 0.4.1.
