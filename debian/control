@@ -2,8 +2,7 @@ Source: uhub
 Section: net
 Priority: optional
 Maintainer: Boris Pek <tehnick@debian.org>
-Build-Depends: debhelper (>= 8), cmake (>= 2.8.3), fakeroot,
- libsqlite3-dev, libssl-dev
+Build-Depends: debhelper (>= 9), cmake, fakeroot, libsqlite3-dev, libssl-dev
 Homepage: http://www.uhub.org/
 Vcs-Git: git://github.com/tehnick/uhub-debian.git
 Vcs-Browser: https://github.com/tehnick/uhub-debian
