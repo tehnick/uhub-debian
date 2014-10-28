@@ -1,3 +1,18 @@
+uhub (0.5.0-0ppa1~vivid1) vivid; urgency=medium
+
+  * Update to stable release 0.5.0.
+  * Bump Standards-Version to 3.9.6 (was 3.9.3): no changes required.
+  * Bump debhelper version to 9 (was 8); update debian/compat.
+  * Simplify debian/rules after switching to debhelper 9.
+  * Simplify build dependencies.
+  * Simplify debian/uhub.lintian-overrides: false positives for lintian tag
+    hardening-no-fortify-functions were fixed in lintian.
+  * Update debian/copyright:
+    - add new copyright holders
+    - update years
+
+ -- Boris Pek <tehnick@debian.org>  Tue, 28 Oct 2014 22:20:32 +0300
+
 uhub (0.4.1-0ppa1~raring1) raring; urgency=low
 
   * Update to stable release 0.4.1.
