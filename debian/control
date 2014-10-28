@@ -7,7 +7,7 @@ Build-Depends: debhelper (>= 8), cmake (>= 2.8.3), fakeroot,
 Homepage: http://www.uhub.org/
 Vcs-Git: git://github.com/tehnick/uhub-debian.git
 Vcs-Browser: https://github.com/tehnick/uhub-debian
-Standards-Version: 3.9.3
+Standards-Version: 3.9.6
 
 Package: uhub
 Architecture: any
