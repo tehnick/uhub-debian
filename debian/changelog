@@ -1,3 +1,13 @@
+uhub (0.4.1-3.1) unstable; urgency=medium
+
+  * Non-maintainer upload.
+  * Bumped DH level to 10.
+  * Bumped Standards-Version to 3.9.8.
+  * patches/openssl1.1.patch: added to provide compatibility with OpenSSL 1.1.
+    Thanks to Reiner Herrmann <reiner@reiner-h.de>. (Closes: #828583)
+
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Fri, 23 Dec 2016 02:27:45 -0200
+
 uhub (0.4.1-3) unstable; urgency=low
 
   * Move package to unstable: no changes required.

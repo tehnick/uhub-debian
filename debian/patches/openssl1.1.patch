@@ -1,0 +1,37 @@
+Author: Reiner Herrmann <reiner@reiner-h.de>
+Description: Compatibility with OpenSSL 1.1
+Bug-Debian: https://bugs.debian.org/828583
+
+--- a/src/network/openssl.c
++++ b/src/network/openssl.c
+@@ -67,7 +67,6 @@
+ 	ERR_clear_error();
+ 	ERR_remove_state(0);
+ 
+-	ENGINE_cleanup();
+ 	CONF_modules_unload(1);
+ 
+         ERR_free_strings();
+@@ -80,16 +79,16 @@
+ 
+ static void add_io_stats(struct net_ssl_openssl* handle)
+ {
+-	if (handle->bio->num_read > handle->bytes_rx)
++	if (BIO_number_read(handle->bio) > handle->bytes_rx)
+ 	{
+-		net_stats_add_rx(handle->bio->num_read - handle->bytes_rx);
+-		handle->bytes_rx = handle->bio->num_read;
++		net_stats_add_rx(BIO_number_read(handle->bio) - handle->bytes_rx);
++		handle->bytes_rx = BIO_number_read(handle->bio);
+ 	}
+ 
+-	if (handle->bio->num_write > handle->bytes_tx)
++	if (BIO_number_written(handle->bio) > handle->bytes_tx)
+ 	{
+-		net_stats_add_tx(handle->bio->num_write - handle->bytes_tx);
+-		handle->bytes_tx = handle->bio->num_write;
++		net_stats_add_tx(BIO_number_written(handle->bio) - handle->bytes_tx);
++		handle->bytes_tx = BIO_number_written(handle->bio);
+ 	}
+ }
+ 
