@@ -1,14 +1,15 @@
 #!/usr/bin/make -f
 
 PACKAGE = uhub
+DEVELOPER = janvidar
+PROJECT = uhub
 
-DEBIAN_PATH  := $(abspath $(dir $(firstword $(MAKEFILE_LIST))))
-USCAN_REPORT = $(shell uscan --noconf --report --dehs $(DEBIAN_PATH))
-CUR_VER = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-version>\(.*\)<\/upstream-version>.*/\1/p')
-CUR_URL = $(shell echo "$(USCAN_REPORT)" | sed -n 's/.*<upstream-url>\(.*\)<\/upstream-url>.*/\1/p')
+CUR_VER = $(shell uscan --dehs | sed -n 's/.*<upstream-version>\(.*\)<\/upstream-version>.*/\1/p')
 
-export DEB_CFLAGS_MAINT_APPEND = $(shell dpkg-buildflags --get CPPFLAGS)
-export DEB_LDFLAGS_MAINT_APPEND = -Wl,--as-needed
+CPPFLAGS:=$(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS:=$(shell dpkg-buildflags --get CFLAGS) $(CPPFLAGS)
+LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
+export CPPFLAGS CFLAGS LDFLAGS
 
 %:
 	dh $@ --parallel
@@ -21,7 +22,17 @@ override_dh_auto_install:
 	dh_auto_install
 	chmod 0750 $(CURDIR)/debian/$(PACKAGE)/var/log/uhub
 
-get-orig-source:
-	wget -c "$(CUR_URL)" -O "$(PACKAGE)_$(CUR_VER).orig.tar.gz"
-
+# Do nothing:
 .PHONY: override_dh_fixperms
+
+get-orig-source:
+	# preparation
+	rm -rf "$(PACKAGE)-$(CUR_VER)" "$(CUR_VER)"
+	# sources
+	wget -4 "http://nodeload.github.com/$(DEVELOPER)/$(PROJECT)/tar.gz/$(CUR_VER)"
+	rm -rf $(PROJECT)-*
+	tar xzf "$(CUR_VER)"
+	# tarball
+	tar -cJf "$(PACKAGE)_$(CUR_VER).orig.tar.xz" "$(PACKAGE)-$(CUR_VER)"
+	# cleaning
+	rm -rf "$(PACKAGE)-$(CUR_VER)" "$(CUR_VER)"

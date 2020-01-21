@@ -1,27 +1,33 @@
-uhub (0.5.0-0ppa1~vivid1) vivid; urgency=medium
+uhub (0.4.1-3.1) unstable; urgency=medium
 
-  * Update to stable release 0.5.0.
-  * Bump Standards-Version to 3.9.6 (was 3.9.3): no changes required.
-  * Bump debhelper version to 9 (was 8); update debian/compat.
-  * Simplify debian/rules after switching to debhelper 9.
-  * Simplify build dependencies.
-  * Simplify debian/uhub.lintian-overrides: false positives for lintian tag
-    hardening-no-fortify-functions were fixed in lintian.
-  * Update debian/copyright:
-    - add new copyright holders
-    - update years
+  * Non-maintainer upload.
+  * Bumped DH level to 10.
+  * Bumped Standards-Version to 3.9.8.
+  * patches/openssl1.1.patch: added to provide compatibility with OpenSSL 1.1.
+    Thanks to Reiner Herrmann <reiner@reiner-h.de>. (Closes: #828583)
 
- -- Boris Pek <tehnick@debian.org>  Tue, 28 Oct 2014 22:20:32 +0300
+ -- Joao Eriberto Mota Filho <eriberto@debian.org>  Fri, 23 Dec 2016 02:27:45 -0200
 
-uhub (0.4.1-0ppa1~raring1) raring; urgency=low
+uhub (0.4.1-3) unstable; urgency=low
+
+  * Move package to unstable: no changes required.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Sun, 12 May 2013 20:09:49 +0300
+
+uhub (0.4.1-2) experimental; urgency=low
+
+  * Add file debian/patches/fix-build-on-hurd-i386:
+    fix build in Debian GNU/Hurd.
+
+ -- Boris Pek <tehnick-8@mail.ru>  Tue, 20 Nov 2012 22:44:22 +0200
+
+uhub (0.4.1-1) experimental; urgency=low
 
   * Update to stable release 0.4.1.
   * Delete debian/patches/*: accepted in upstream.
   * Update debian/rules and debian/watch: fix after recent changes in GitHub.
-  * Package in Launchpad was sync with package in Debian.
-  * Changelog was cleaned.
 
- -- Boris Pek <tehnick-8@mail.ru>  Wed, 07 Nov 2012 23:11:59 +0200
+ -- Boris Pek <tehnick-8@mail.ru>  Wed, 07 Nov 2012 23:42:52 +0200
 
 uhub (0.4.0+git20121013-55-g7fae42a-2) experimental; urgency=low
 

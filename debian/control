@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9), cmake, libsqlite3-dev, libssl-dev
 Homepage: http://www.uhub.org/
 Vcs-Git: git://github.com/tehnick/uhub-debian.git
 Vcs-Browser: https://github.com/tehnick/uhub-debian
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 
 Package: uhub
 Architecture: any
