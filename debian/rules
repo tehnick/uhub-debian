@@ -12,7 +12,7 @@ LDFLAGS:=$(shell dpkg-buildflags --get LDFLAGS) -Wl,--as-needed
 export CPPFLAGS CFLAGS LDFLAGS
 
 %:
-	dh $@ --parallel
+	dh $@
 
 override_dh_auto_clean:
 	dh_auto_clean
