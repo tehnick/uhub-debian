@@ -1,2 +1,3 @@
 fix-build-on-hurd-i386
 openssl1.1.patch
+arm64-fix-ftbfs.patch
