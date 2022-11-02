@@ -1,2 +1,2 @@
 version=4
-https://github.com/janvidar/uhub/tags .*/janvidar/uhub/archive/(\d.+)\.tar\.gz debian uupdate
+https://github.com/janvidar/uhub/tags .*/janvidar/uhub/archive/refs/tags/(\d.+)\.tar\.gz debian uupdate
