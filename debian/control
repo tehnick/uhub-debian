@@ -5,7 +5,7 @@ Maintainer: Boris Pek <tehnick-8@mail.ru>
 Build-Depends: debhelper-compat (= 13), cmake (>= 2.8.3), fakeroot,
  libsqlite3-dev, libssl-dev
 Homepage: https://www.uhub.org/
-Vcs-Git: git://github.com/tehnick/uhub-debian.git
+Vcs-Git: https://github.com/tehnick/uhub-debian.git
 Vcs-Browser: https://github.com/tehnick/uhub-debian
 Standards-Version: 3.9.8
 
