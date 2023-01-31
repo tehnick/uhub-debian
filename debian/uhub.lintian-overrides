@@ -1,6 +1,6 @@
 # This is important security issue. These logs shouldn't be available
 # for reading by others.
-uhub: non-standard-dir-perm var/log/uhub/ 0750 != 0755
+uhub: non-standard-dir-perm 0750 != 0755 [var/log/uhub/]
 
 # False positives for lintian tag hardening-no-fortify-functions.
-uhub: hardening-no-fortify-functions usr/lib/uhub/*.so
+uhub: hardening-no-fortify-functions [usr/lib/uhub/*.so]
